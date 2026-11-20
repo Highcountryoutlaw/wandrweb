@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stand With Kelsey | WANDR Community Support</title>
+<meta name="description" content="A community support page for Kelsey and her family during Shannon's hospice journey.">
+<style>
+:root{--bg:#100d19;--panel:#1b1427;--purple:#b58cff;--gold:#f6d58b;--text:#f7f0ff;--muted:#c7b8d6;--line:#4b365e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#38244d 0%,#100d19 55%,#08070c 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}a{color:var(--gold)}.wrap{max-width:1050px;margin:auto;padding:24px}.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0}.brand{font-weight:900;letter-spacing:.18em;color:var(--gold)}.tag{color:var(--muted);font-size:.85rem}.hero{padding:62px 24px 46px;text-align:center;border:1px solid var(--line);border-radius:26px;background:linear-gradient(160deg,#2b1b3bba,#120e1bd9),url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=85') center/cover;box-shadow:0 25px 70px #0008}.hero h1{font-size:clamp(2.2rem,7vw,4.4rem);line-height:1.05;margin:12px auto;color:#fff}.hero p{max-width:720px;margin:18px auto;color:#eee4ff;font-size:1.12rem}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.82rem}.button{display:inline-block;border:0;border-radius:999px;padding:13px 22px;font-weight:800;text-decoration:none;cursor:pointer;background:linear-gradient(100deg,#b58aff,#f1d38a);color:#1a1023;margin:6px}.button.secondary{background:#2a2037;color:var(--text);border:1px solid var(--line)}section{margin:28px 0}.card{background:#1a1426dd;border:1px solid var(--line);border-radius:20px;padding:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card h2,.card h3{color:var(--gold);margin-top:0}.amounts{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.amount{background:#261a35;border:1px solid #78599b;color:#fff;padding:12px 18px;border-radius:14px;cursor:pointer;font-weight:700}.amount.selected{background:#b58aff;color:#180d24}.small{font-size:.88rem;color:var(--muted)}.wallet{word-break:break-all;background:#0b0812;padding:12px;border-radius:10px;border:1px solid #382848}.footer{text-align:center;color:var(--muted);padding:30px 0}.notice{border-left:3px solid var(--gold);padding:12px 16px;background:#2a2034;border-radius:10px;color:#e8ddf5}.status{min-height:1.5em;color:var(--gold)}@media(max-width:600px){.wrap{padding:14px}.hero{padding:42px 16px}.nav{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><div class="brand">WANDR 🪶</div><div class="tag">COMMUNITY • COMPASSION • CONNECTION</div></nav>
+  <header class="hero">
+    <div class="eyebrow">A community support initiative</div>
+    <h1>Stand With Kelsey</h1>
+    <p>When family needs us most, community can make the weight a little lighter. This page is a place for friends, kind strangers, and the WANDR community to offer support while Kelsey and her loved ones spend precious time with Shannon in hospice.</p>
+    <a class="button" href="#support">Send Support 💜</a>
+    <a class="button secondary" href="#story">Read the Story</a>
+  </header>
+
+  <section id="story" class="card">
+    <h2>Why We’re Here 🌲</h2>
+    <p>Kelsey and her family are navigating an incredibly difficult chapter as Shannon receives hospice care. Being present with loved ones can bring unexpected costs and practical challenges—meals, transportation, everyday essentials, and time away from normal responsibilities.</p>
+    <p>This community effort is meant to offer a little breathing room and remind Kelsey that she does not have to face every burden alone. Every contribution, share, encouraging message, or act of kindness matters.</p>
+    <p><strong>Support is offered with love, dignity, and no expectation.</strong></p>
+  </section>
+  <section class="grid">
+    <div class="card"><h3>🍲 Everyday Needs</h3><p>Help with groceries, meals, and essentials during a stressful time.</p></div>
+    <div class="card"><h3>🚗 Getting There</h3><p>Support transportation, fuel, and the practical costs of being present with family.</p></div>
+    <div class="card"><h3>💜 A Little Breathing Room</h3><p>Help ease immediate financial pressure so family can focus on time, care, and each other.</p></div>
+  </section>
+  <section id="support" class="card">
+    <h2>Send Support 💎</h2><p>Choose an amount below. Crypto contributions are sent directly to the receiving wallet shown here and are generally irreversible. Please verify the address and network before sending.</p>
+    <div class="amounts" aria-label="Donation amount"><button class="amount selected" data-amount="0.001">0.001 ETH</button><button class="amount" data-amount="0.005">0.005 ETH</button><button class="amount" data-amount="0.01">0.01 ETH</button><button class="amount" data-amount="0.02">0.02 ETH</button></div>
+    <button class="button" id="connect">Connect Wallet</button><button class="button secondary" id="donate">Donate Selected Amount</button>
+    <p class="status" id="status" role="status"></p><p id="account" class="small">Wallet not connected.</p>
+    <h3>Receiving Wallet</h3><div class="wallet" id="walletDisplay">420Goldenage.eth</div><p class="small" id="resolvedWallet">Resolving ENS receiving wallet…</p>
+    <p class="small">Network: Base • Asset: ETH (native)</p>
+    <div class="notice"><strong>Transparency:</strong> This page does not display a live fundraising total. Contributions sent through the wallet flow go directly to the wallet address above. The organizer is responsible for how funds are used; please donate only if comfortable.</div>
+  </section>
+  <section class="card"><h2>Every Kindness Counts 🕊️</h2><p>Don’t have crypto? Share this page, send a message of encouragement, bring a meal, or simply check in. Support doesn’t have to be financial to mean something.</p><button class="button secondary" id="share">Share This Page</button></section>
+  <footer class="footer"><div class="brand">WANDR • THE SIGNAL OF KINDNESS</div><p>Built with love for community, connection, and compassion. 💜🌲🪶</p></footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+<script>
+const RECEIVING_ENS = '420Goldenage.eth';
+const BASE_CHAIN_ID = '0x2105'; // Base mainnet (8453)
+let provider = null, account = null, amount = '0.001', receivingAddress = null;
+// ENS is resolved on Ethereum Mainnet, while donations are sent on Base.
+async function resolveReceivingENS(){
+  const el=document.getElementById('resolvedWallet');
+  try{
+    if(!window.ethers){throw new Error('ENS resolver library did not load.');}
+    const ensProvider=new ethers.JsonRpcProvider('https://cloudflare-eth.com');
+    receivingAddress=await ensProvider.resolveName(RECEIVING_ENS);
+    if(!receivingAddress){throw new Error('No Ethereum address is currently set for this ENS name.');}
+    el.textContent='Resolved address: '+receivingAddress;
+  }catch(e){receivingAddress=null;el.textContent='ENS resolution unavailable — donations are disabled until it can be verified.';status(e.message||'Could not resolve ENS name.');}
+}
+
+const statusEl = document.getElementById('status');
+function status(msg){statusEl.textContent=msg;}
+function isConfigured(){return /^0x[a-fA-F0-9]{40}$/.test(receivingAddress||'');}
+document.getElementById('walletDisplay').textContent=RECEIVING_ENS;
+resolveReceivingENS();
+document.querySelectorAll('.amount').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.amount').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected'); amount=btn.dataset.amount;
+}));
+document.getElementById('connect').addEventListener('click',async()=>{
+  if(!window.ethereum){status('No compatible browser wallet detected. Open this page in a wallet-enabled browser.');return;}
+  try{provider=window.ethereum;const accounts=await provider.request({method:'eth_requestAccounts'});account=accounts[0];
+    const chain=await provider.request({method:'eth_chainId'});
+    document.getElementById('account').textContent='Connected: '+account+(chain===BASE_CHAIN_ID?' • Base network':' • Wrong network');
+    if(chain!==BASE_CHAIN_ID){try{await provider.request({method:'wallet_switchEthereumChain',params:[{chainId:BASE_CHAIN_ID}]});status('Switched to Base. Please verify your wallet before donating.');}catch(e){status('Please manually switch your wallet to Base (Chain ID 8453).');}}
+    else status('Wallet connected.');
+  }catch(e){status(e.message||'Wallet connection cancelled.');}
+});
+document.getElementById('donate').addEventListener('click',async()=>{
+  if(!account||!provider){status('Connect your wallet first.');return;}
+  if(!isConfigured()){status('Receiving ENS could not be verified. Please try again later.');return;}
+  try{const chain=await provider.request({method:'eth_chainId'});if(chain!==BASE_CHAIN_ID){status('Switch to Base before donating.');return;}
+    const value='0x'+BigInt(Math.round(Number(amount)*1e18)).toString(16);
+    const tx=await provider.request({method:'eth_sendTransaction',params:[{from:account,to:receivingAddress,value,chainId:BASE_CHAIN_ID}]});
+    status('Donation transaction submitted: '+tx+' — thank you for your kindness!');
+  }catch(e){status(e.message||'Transaction cancelled or failed.');}
+});
+document.getElementById('share').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(location.href);status('Page link copied! Share it with your community.');}
+  catch(e){status('Copy this page URL from your browser address bar to share it.');}
+});
+</script>
+</body>
+</html>
